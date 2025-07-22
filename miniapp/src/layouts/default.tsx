@@ -8,6 +8,7 @@ import NetworkSelector from '@components/NetworkSelector';
 import UnlockWalletModal from '@components/UnlockWalletModal';
 import WalletCreationModal from '@components/WalletCreationModal';
 import WalletInfo from '@components/WalletInfo';
+import { MobileNavBar } from '@components/MobileNavBar';
 
 interface IProps {
   children: React.ReactNode;
@@ -79,27 +80,31 @@ const MainLayout: React.FC<IProps> = ({ children, className }) => {
   return (
     <div className={cx(styles['main-layout'], className)}>
       <div className={styles['main-layout__header']}>
-        <div className={styles['main-layout__wallet']}>
-          {(authenticated || activeWallet) && (
-            <NetworkSelector
-              chain={chain}
-              chains={chains}
-              isWrongNetwork={isWrongNetwork}
-              onSwitchNetwork={handleSwitchNetwork}
-              switchStatus={status}
-            />
-          )}
+        <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+          <span style={{ fontSize: 32, marginRight: 8 }} role="img" aria-label="logo">💸</span>
+          <span style={{ fontWeight: 700, fontSize: 22, letterSpacing: 1, color: '#fff' }}>youBuidl</span>
+          <div className={styles['main-layout__wallet']}>
+            {(authenticated || activeWallet) && (
+              <NetworkSelector
+                chain={chain}
+                chains={chains}
+                isWrongNetwork={isWrongNetwork}
+                onSwitchNetwork={handleSwitchNetwork}
+                switchStatus={status}
+              />
+            )}
 
-          <WalletInfo
-            authenticated={authenticated}
-            activeWallet={activeWallet}
-            balance={balance}
-            address={address}
-            localWallets={localWallets}
-            onWalletSelection={handleWalletSelection}
-            onAddNewWallet={() => setShowWalletModal(true)}
-            onDisconnect={handleLogout}
-          />
+            <WalletInfo
+              authenticated={authenticated}
+              activeWallet={activeWallet}
+              balance={balance}
+              address={address}
+              localWallets={localWallets}
+              onWalletSelection={handleWalletSelection}
+              onAddNewWallet={() => setShowWalletModal(true)}
+              onDisconnect={handleLogout}
+            />
+          </div>
         </div>
       </div>
 
@@ -124,6 +129,7 @@ const MainLayout: React.FC<IProps> = ({ children, className }) => {
           onSuccess={handleUnlockSuccess}
         />
       )}
+      <MobileNavBar />
     </div>
   );
 };

@@ -6,7 +6,7 @@ export const devContracts: Record<number, { claim: `0x${string}`}> = {
     claim: "0x6540c58a7236df1dc9ff563d4a75960f32926fe2",
   },
   [celoAlfajores.id]: {
-    claim: "0xE47845dac04A7C91E73B8f09b441785810D40f69",s
+    claim: "0xE47845dac04A7C91E73B8f09b441785810D40f69",
   },
   [gnosisChiado.id]: {
     claim: "0x7cFD096A93dD589fdB94F168158a6c631fFc22c8",

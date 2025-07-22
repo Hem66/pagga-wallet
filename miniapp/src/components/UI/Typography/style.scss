@@ -1,4 +1,4 @@
-@import "../../../assets/scss/typography.scss";
+@use "../../../assets/scss/typography.scss" as *;
 
 .typography {
   text-align: left;
