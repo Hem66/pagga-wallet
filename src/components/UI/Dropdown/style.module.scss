@@ -1,25 +1,37 @@
 .dropdown {
+  &-card {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    left: 15px;
+    width: calc(100% - 30px);
+    z-index: 1200;
+    padding-bottom: 30px;
+    background: rgba(36, 38, 54, 0.98);
+    border-radius: 18px;
+    box-shadow: 0 4px 24px 0 rgba(91, 76, 215, 0.10);
+    border: 1.5px solid rgba(91, 76, 215, 0.12);
+    backdrop-filter: blur(8px);
+  }
 
-    &-card {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        left: 15px;
-        width: calc(100% - 30px);
-        z-index: 1200;
-        padding-bottom: 30px;
+  &-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    border-radius: 12px;
+    padding: 8px 12px;
+    transition: background 0.2s, color 0.2s;
+    &:hover, &:focus {
+      background: rgba(91, 76, 215, 0.08);
+      color: #5b4cd7;
     }
+  }
 
-    &-item {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        cursor: pointer;
-    }
-
-    &.selected {
-        background-color: rgba(0, 0, 0, 0.05);
-        font-weight: 500;
-    }
+  &.selected {
+    background-color: rgba(91, 76, 215, 0.08);
+    font-weight: 500;
+    color: #5b4cd7;
+  }
 }

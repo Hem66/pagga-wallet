@@ -4,10 +4,10 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background: radial-gradient(155% 155% at -28.55% 19.3%, #7F70F2 0%, #2A2749 57.71%, #282544 59.27%, #262340 65.14%, #292741 71.01%, #2C2949 73.88%, #34305A 77.32%, #7F70F2 100%);
+        background: var(--main-bg);
         border-radius: 20px;
         padding: 7px 14px;
-        color: #FFF;
+        color: var(--main-color);
     }
 
     &__button {

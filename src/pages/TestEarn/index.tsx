@@ -30,7 +30,7 @@ const TestEarn: React.FC = () => {
   return (
     <div className={styles.testEarn}>
       <Typography size='20' weight='700' textAlign='center'>Test Token Staking</Typography>
-      <Typography size='14' textAlign='center' color='var(--gray-secondary)'>Stake and unstake your test tokens</Typography>
+      <Typography size='14' textAlign='center' color='var(--main-color)'>Stake and unstake your test tokens</Typography>
       
       <Card className={styles.stakeCard}>
         <div className={styles.balance}>

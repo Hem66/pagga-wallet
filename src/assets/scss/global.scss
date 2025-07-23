@@ -1,21 +1,60 @@
-* { 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'SF Pro Display', sans-serif;
+
+
+@import url('https://fonts.cdnfonts.com/css/sf-pro-rounded');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'SF Pro Rounded', 'SF Pro Display', 'Inter', 'Segoe UI', Arial, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+
+:root {
+  --main-bg: #f7f8fa;
+  --main-color: #23243a;
+}
+
+.dark {
+  --main-bg: #181a20;
+  --main-color: #e6e8f0;
 }
 
 body {
-    color: var(--white);
-    font-weight: 400;
+  color: var(--main-color);
+  font-weight: 400;
+  background: var(--main-bg);
+  min-height: 100vh;
+  letter-spacing: 0.01em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background 0.3s, color 0.3s;
+}
 }
 
 button {
-    border: none;
+  border: none;
+  background: linear-gradient(90deg, #5b4cd7 0%, #7c5cff 100%);
+  color: #fff;
+  border-radius: 12px;
+  padding: 12px 22px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px 0 rgba(91, 76, 215, 0.10);
+  transition: background 0.2s, box-shadow 0.2s;
+  outline: none;
+  &:hover, &:focus {
+    background: linear-gradient(90deg, #7c5cff 0%, #5b4cd7 100%);
+    box-shadow: 0 4px 16px 0 rgba(91, 76, 215, 0.18);
+  }
 }
 
 a {
-    text-decoration: none;
-    color: var(--white);
+  text-decoration: none;
+  color: #bfc9d8;
+  transition: color 0.2s;
+  &:hover, &:focus {
+    color: #5b4cd7;
+  }
 }
 

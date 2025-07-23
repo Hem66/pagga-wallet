@@ -19,7 +19,7 @@ const EarnPage: React.FC = () => {
     <div className={styles['earn-page']}>
       <div>
         <Typography size='20' weight='700' textAlign='center'>Staking</Typography>
-        <Typography size='14' textAlign='center' color='var(--gray-secondary)'>Participate in staking and earn rewards!</Typography>
+        <Typography size='14' textAlign='center' color='var(--main-color)'>Participate in staking and earn rewards!</Typography>
       </div>
       <CardSection cards={cards} basePath='/earn'>Select dApps</CardSection>
     </div>

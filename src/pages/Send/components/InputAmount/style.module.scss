@@ -33,7 +33,7 @@
 
     &-dropdown {
         width: fit-content;
-        background: var(--send-bg);
+        background: var(--main-bg);
 
         &-container {
             display: flex;
@@ -62,7 +62,7 @@
     }
 
     &::placeholder {
-        color: var(--white);
+        color: var(--main-color);
         font-size: 30px;
         font-weight: 700;
     }

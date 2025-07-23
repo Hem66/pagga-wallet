@@ -10,17 +10,17 @@
         align-items: center;
         height: 100px;
         gap: 3px;
-        background: var(--primary);
+        background: var(--main-bg);
         border-radius: 36px;
         margin-bottom: 16px;
 
         &__title {
-            color: var(--gray-secondary);
+            color: var(--main-color);
             font-size: 17px;
         }
 
         &__value {
-            color: var(--white-color);
+            color: var(--main-color);
             font-size: 30px;
             font-weight: 700;
         }

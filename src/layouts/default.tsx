@@ -9,6 +9,7 @@ import UnlockWalletModal from '@components/UnlockWalletModal';
 import WalletCreationModal from '@components/WalletCreationModal';
 import WalletInfo from '@components/WalletInfo';
 import { MobileNavBar } from '@components/MobileNavBar';
+import { ThemeSwitcher } from '@components/ThemeSwitcher';
 
 interface IProps {
   children: React.ReactNode;
@@ -83,6 +84,7 @@ const MainLayout: React.FC<IProps> = ({ children, className }) => {
         <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
           <span style={{ fontSize: 32, marginRight: 8 }} role="img" aria-label="logo">💸</span>
           <span style={{ fontWeight: 700, fontSize: 22, letterSpacing: 1, color: '#fff' }}>youBuidl</span>
+          <ThemeSwitcher />
           <div className={styles['main-layout__wallet']}>
             {(authenticated || activeWallet) && (
               <NetworkSelector

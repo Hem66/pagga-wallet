@@ -1,20 +1,23 @@
 .wallet-tooltip {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    background: var(--black);
-    border-radius: 12px;
-    padding: 6px 12px;
-    width: fit-content;
-    height: 23px;
-    font-size: 14px;
-    font-weight: 700;
-    color: var(--gray-color);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(36, 38, 54, 0.92);
+  border-radius: 12px;
+  padding: 6px 14px;
+  width: fit-content;
+  height: 23px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #bfc9d8;
+  box-shadow: 0 2px 8px 0 rgba(91, 76, 215, 0.10);
+  border: 1.5px solid rgba(91, 76, 215, 0.12);
+  backdrop-filter: blur(8px);
 
-    &__circle {
-        width: 5px;
-        height: 5px;
-        border-radius: 50%;
-        background: var(--green-light);
-    }
+  &__circle {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--green-light);
+  }
 }

@@ -47,7 +47,7 @@ const DepositPage: React.FC = () => {
                 <QRCode
                     value={address}
                     size={200}
-                    style={{ background: 'white', padding: '16px' }}
+                    style={{ background: 'var(--main-bg)', padding: '16px' }}
                 />
             </div>
 

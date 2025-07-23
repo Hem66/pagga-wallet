@@ -1,22 +1,31 @@
 .button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--primary);
-    color: var(--white);
-    width: 100%;
-    min-height: 38px;
-    border-radius: 15px;
-    font-weight: 700;
-    font-size: 14px;
-    gap: 7px;
-    cursor: pointer;
-    padding: 3px 10px;
-    
-    &__active {
-        background: var(--primary);
-        border: 1px solid var(--primary)!important;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #23243a;
+  color: #fff;
+  width: auto;
+  min-height: 36px;
+  border-radius: 12px;
+  font-family: 'SF Pro Rounded', 'SF Pro Display', 'Inter', 'Segoe UI', Arial, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  gap: 8px;
+  cursor: pointer;
+  padding: 6px 16px;
+  box-shadow: none;
+  border: none;
+  transition: background 0.2s, color 0.2s;
+  outline: none;
+  &:hover, &:focus {
+    background: #35365a;
+    color: #5b4cd7;
+  }
+  &__active {
+    background: #5b4cd7;
+    border: 1.5px solid #7c5cff !important;
+    color: #fff;
+  }
 }
 
 .menu-button {
